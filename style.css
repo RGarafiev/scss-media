@@ -1,0 +1,530 @@
+@import "./reset.css";
+@import url("../font/stylesheet.css");
+body {
+  background: #f5f6fa;
+}
+
+h2 {
+  font-family: Gilroy;
+  font-size: 47px;
+  font-weight: 700;
+  color: #2d2d2f;
+  text-align: center;
+}
+h2 span {
+  font-weight: 400;
+}
+
+h3 {
+  font-family: Gilroy;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d2d2f;
+}
+h3 span {
+  font-family: Gilroy;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: Gilroy;
+  font-size: 29px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+h5 {
+  font-family: Gilroy;
+  font-size: 23px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.header {
+  background-image: url("../img/bg-img.jpg");
+  max-width: 1440px;
+  min-height: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.header__info {
+  max-width: 1100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.header__info_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__info_title_logo {
+  height: 35px;
+  width: 72px;
+}
+.header__info_title_name {
+  color: #e5e5e6;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header__info_title_info {
+  color: #909195;
+  font-family: Gilroy;
+  font-size: 9px;
+  font-weight: 400;
+}
+.header__info_rating {
+  display: flex;
+  gap: 10px;
+}
+.header__info_rating_state {
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-top: -43px;
+}
+.header__info_rating_stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__info_rating_star {
+  display: flex;
+  gap: 3px;
+}
+.header__info_rating-text {
+  font-family: Gilroy;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.header__info_rating-text span {
+  font-family: Gilroy;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.header__info__calculator {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  gap: 13px;
+}
+.header__info__calculator_btn {
+  width: 237px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #8ac33c;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.header__info__calculator_email {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+.header__info__calculator_email-img {
+  width: 10px;
+  height: 7px;
+  cursor: pointer;
+}
+.header__info__calculator_email-address {
+  font-family: Gilroy;
+  font-size: 11px;
+  font-weight: 600;
+  color: #96989f;
+  cursor: pointer;
+}
+.header__info-whtsapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.header__info-whtsapp_img {
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+.header__info-whtsapp_text {
+  font-family: Gilroy;
+  font-size: 10px;
+  font-weight: 400;
+  color: #d2d3d6;
+  cursor: pointer;
+}
+.header__info-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.header__info-phone_text {
+  font-family: Gilroy;
+  font-size: 10px;
+  font-weight: 400;
+  color: #d2d3d6;
+}
+.header__info-phone_number {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.header__info-phone_feedback {
+  font-family: Gilroy;
+  font-size: 12px;
+  font-weight: 600;
+  color: #87bf3c;
+  cursor: pointer;
+}
+.header__burger {
+  display: none;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  min-height: 73px;
+  margin: 0 auto;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fbffff;
+}
+.header__nav-like {
+  width: 16px;
+  height: 13px;
+  margin-right: 6px;
+}
+.header__nav-search {
+  width: 13px;
+  height: 13px;
+  margin-right: 6px;
+}
+.header__sectionup {
+  max-width: 1100px;
+  min-height: 379px;
+  margin: 0 auto;
+}
+.header__sectionup_title {
+  font-family: Gilroy;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-top: 63px;
+}
+.header__sectionup_title span {
+  font-family: Gilroy;
+  font-size: 48px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.header__sectionup_text {
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 16px;
+}
+.header__sectionup_text span {
+  font-family: Gilroy;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.header__sectionup_btn {
+  width: 285px;
+  height: 60px;
+  border-radius: 4px;
+  background: #feaa01;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fbffff;
+  margin-top: 42px;
+  cursor: pointer;
+}
+.header__sectiondown {
+  max-width: 1100px;
+  min-height: 240px;
+  margin: 0 auto;
+  display: flex;
+  gap: 70px;
+}
+.header__sectiondown_img {
+  padding-top: 74px;
+}
+.header__sectiondown_text {
+  font-family: Gilroy;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.header_tree {
+  position: absolute;
+  left: 0px;
+  top: 200px;
+}
+
+.house_price {
+  max-width: 1110px;
+  min-height: 820px;
+  margin: 85px auto 0 auto;
+  background-color: #f5f6fa;
+}
+.house_price__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 31px;
+  margin-top: 47px;
+}
+.house_price__container_column {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+.house_price__container_column_ahouse {
+  width: 348px;
+  height: 351px;
+  background-image: url("./img/ahouse.png");
+}
+.house_price__container_column_abaths {
+  width: 348px;
+  height: 161px;
+  background-image: url("./img/abaths.png");
+}
+.house_price__container_column_bhouse {
+  width: 348px;
+  height: 161px;
+  background-image: url("./img/bhouse.png");
+}
+.house_price__container_column_bbaths {
+  width: 348px;
+  height: 161px;
+  background-image: url("./img/bbath.png");
+}
+.house_price__container_column_alog {
+  width: 348px;
+  height: 161px;
+  background-image: url("./img/alog.png");
+}
+.house_price__container_column_blog {
+  width: 348px;
+  height: 161px;
+  background-image: url("./img/blog.png");
+}
+.house_price__container_column_ahouse {
+  width: 348px;
+  height: 351px;
+  background-image: url("./img/ahouse.png");
+}
+.house_price__container_bigcard {
+  margin: 45px 39px 0px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 121px;
+}
+.house_price__container_bigcard_title {
+  display: flex;
+  justify-content: space-between;
+}
+.house_price__container_bigcard_title_btn {
+  width: 76px;
+  height: 25px;
+  border-radius: 12.5px;
+  background-color: #FFFFFF;
+  font-family: Gilroy;
+  font-size: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.house_price__container_bigcard_price {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.house_price__container_bigcard_price_text {
+  font-family: Gilroy;
+  font-size: 13px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.house_price__container_bigcard_price_text span {
+  font-size: 29px;
+  font-weight: 700;
+}
+.house_price__container_bigcard_price_btn {
+  width: 159px;
+  height: 40px;
+  border-radius: 4px;
+  background: #73B918;
+  font-family: Gilroy;
+  font-size: 10px;
+  font-weight: 700;
+  color: #FCFCFE;
+  cursor: pointer;
+}
+.house_price__container_smallcard {
+  margin: 29px 25px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.house_price__container_smallcard_title {
+  display: flex;
+  justify-content: space-between;
+}
+.house_price__container_smallcard_title_btn {
+  width: 79px;
+  height: 21px;
+  border-radius: 12.5px;
+  background-color: #FFFFFF;
+  font-family: Gilroy;
+  font-size: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.house_price__container_smallcard_price {
+  display: flex;
+  gap: 13px;
+}
+.house_price__container_smallcard_price_text {
+  font-family: Gilroy;
+  font-size: 13px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.house_price__container_smallcard_price_text span {
+  font-size: 23px;
+  font-weight: 700;
+}
+.house_price__container_smallcard_price_btn {
+  width: 132px;
+  height: 33px;
+  border-radius: 3px;
+  background: #73B918;
+  font-family: Gilroy;
+  font-size: 10px;
+  font-weight: 700;
+  color: #FCFCFE;
+  cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+  .header_tree {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .header, .house_price {
+    padding: 0 20px 0 20px;
+  }
+  .header__info-rating {
+    display: none;
+  }
+  h2 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .header__info__calculator, .header__nav-like, .header__navb-search {
+    display: none;
+  }
+  .header__nav {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .header__sectiondown {
+    gap: 20px;
+  }
+}
+@media (max-width: 650px) {
+  h2, h2 span {
+    font-size: 36px;
+  }
+  h3, h3 span {
+    font-size: 30px;
+  }
+  .header {
+    padding-bottom: 20px;
+    background-size: cover;
+  }
+  .header__info {
+    align-items: center;
+    gap: 20px;
+  }
+  .header__info-phone {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+    cursor: pointer;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #fff;
+  }
+  .header__burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #fff;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__sectionup_title {
+    padding-top: 20px;
+    font-size: 36px;
+  }
+  .header__sectionup_title span {
+    font-size: 36px;
+  }
+  .header__sectionup_text {
+    font-size: 16px;
+  }
+  .header__sectionup_text span {
+    font-size: 16px;
+  }
+  .header__sectionup_btn {
+    width: 250px;
+  }
+  .header__sectiondown {
+    flex-wrap: wrap;
+  }
+  .header__sectiondown_img {
+    padding-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
